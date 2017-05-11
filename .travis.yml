@@ -9,6 +9,17 @@ matrix:
     - os: osx
       osx_image: xcode8.3
 
+deploy:
+  matrix:
+    - provider: bintray
+      skip_cleanup: true
+      file: ${TRAVIS_BUILD_DIR}/build/travis-ci/bintray/miktex-bare-descriptor.json
+      user: edocevoli
+      on:
+        all_branches: true
+      key:
+        secure: uAvxuDjY+hCG1kXwG8Jz0LdCn1dGNpc8q7RdhJlEPCimDPvsuY+AKSPSnScDzUNKBQn2Wof3fSaVq6wcUoBOfuyCXSVvKzzLyhMLSvAAAD2zoFuHR1x6/+qKjMe0SIGP/x6lwowfBJMD2XlbOr6NpdYF87zmRUwttk4jHmxZefgNBGqtcf0zlufKY7HnxjmjXNe53EEzooZHdkX4TXLl4BeqvojmBrM4c8cPpXfuF8/OLMJdK62WdKAy/5LgfcrclvqmpGsNJWMZjUFG6S/94pZtZIbNlMKUjdL5CoSingtrZQ17tazhIjZfzR5WcccogjELywGKo/Sn7SBojN+XwxYbfo6C1fKR4h6M34rzioO76Gif0czIB9QX/oQ44oernMdUlgBAGszWKjpx4IBnSGO2sF0pPobODQf6PWEE9tH1QQMC+vAsZbOeJVizv/1zs5bZzV+97umEqlDANbSEF+vuyDeM7n5Rq0FrpeuMfpi2IaGFQvJrESteieExE8j+hd+WCYsI92NBT+/WKOzVlGIVMoMxDKbSWWegWemJJ6pRYAvSOcHP2X/C+dEXL6z6XEkdEpkwYAjoTkNH0NvbYzmOgEr18zHvpgtjyOCGeXDaoW+3pG2YpzHqLqH4nY/OWc4cYiHEqEk56NQ/zvtyeanRk86mN2EQG7DP79juOb8=
+      
 before_install: ./travis-ci/before_install.sh
 before_script: ./travis-ci/before_script.sh
 script: ./travis-ci/script.sh
