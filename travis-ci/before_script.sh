@@ -11,5 +11,5 @@ else
     versionname=stable
 fi
 
-miktexversion=`brew info --json=v1 miktex-bare | jq --raw-output ".[0].versions.${versionname}"`
+miktexversion=`brew info --json=v1 miktex | jq --raw-output ".[0].versions.${versionname}"`
 cmake .. -DMIKTEX_VERSION="${miktexversion}"

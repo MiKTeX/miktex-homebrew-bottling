@@ -22,7 +22,7 @@ cmake_minimum_required(VERSION 3.7)
 project(miktex-homebrew-bottling)
 
 configure_file(
-  travis-ci/bintray/miktex-bare-descriptor.json.cmake
-  ${CMAKE_BINARY_DIR}/travis-ci/bintray/miktex-bare-descriptor.json
+  travis-ci/bintray/miktex-descriptor.json.cmake
+  ${CMAKE_BINARY_DIR}/travis-ci/bintray/miktex-descriptor.json
 )
 

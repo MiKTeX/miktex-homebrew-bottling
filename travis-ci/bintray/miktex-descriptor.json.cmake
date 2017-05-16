@@ -1,6 +1,6 @@
 {
     "package": {
-	"name": "miktex-bare",
+	"name": "miktex",
 	"repo": "bottles",
 	"subject": "miktex"
     },

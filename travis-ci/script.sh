@@ -8,5 +8,5 @@ if [ "${MIKTEX_NEXT}" = "yes" ]; then
     installoptions=--devel
 fi
 
-brew install --verbose --build-bottle ${installoptions} miktex-bare
-brew bottle --verbose miktex-bare
+brew install --verbose --build-bottle ${installoptions} miktex
+brew bottle --verbose miktex

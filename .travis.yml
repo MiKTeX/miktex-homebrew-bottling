@@ -12,7 +12,7 @@ matrix:
 deploy:
   - provider: bintray
     skip_cleanup: true
-    file: ${TRAVIS_BUILD_DIR}/build/travis-ci/bintray/miktex-bare-descriptor.json
+    file: ${TRAVIS_BUILD_DIR}/build/travis-ci/bintray/miktex-descriptor.json
     user: edocevoli
     on:
       all_branches: true
