@@ -1,3 +1,3 @@
 # Creating MiKTeX bottles
 
-This repository is used to build MiKTeX 2.9.6481 bottles for the Homebrew package manager.
+This repository is used to build MiKTeX 2.9.6500 bottles for the Homebrew package manager.
